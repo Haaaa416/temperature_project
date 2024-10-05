@@ -8,7 +8,17 @@ ppt:有四個ppt儲資料/照片
 1. 8/28中
    (1)原數據是以三個狀態兩個特徵去使用，後來根據文獻告知theta頻帶在疼痛時會被誘發出來，因此增加這個特徵出來  
       => 三個狀態(恆溫舒服 升溫舒服 升溫不舒服) 三個特徵
-   (2)經過資料清理:
-   ![image](https://github.com/user-attachments/assets/ff23ca12-9bd4-442f-9422-42ba13365adf)
+   (2)經過資料清理(以下是資料清理步驟):
+      ![image](https://github.com/user-attachments/assets/ff23ca12-9bd4-442f-9422-42ba13365adf)
+      最後使用四分位距擷取特徵資料
+      恆溫舒服&升溫舒服:theta & alpha 取 Q1-Q3  
+                      gamma 取 最小值到中位數  
+      升溫不舒服:theta & alpha 取 Q1-Q3  
+                gamma 取中位數到最大值  
+   (3)以四個模型進行訓練:邏輯迴歸、隨機森林、SVM、決策樹
+      ![image](https://github.com/user-attachments/assets/333b4b23-bb43-49fa-bb0d-9e5eb9404446)
+      ![image](https://github.com/user-attachments/assets/fe393a13-7e81-4697-96d6-3b093e0056d8)
+      => 根據第一張圖:不論在哪個電極位上(Cz or Fz)，以三個特徵進行訓練效過最佳
+      => 根據第二章圖:不論在哪個電極位上(Cz or Fz)，以三個特徵進行訓練效過最佳
 
-   移除體動以四個模型
+
