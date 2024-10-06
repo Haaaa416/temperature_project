@@ -27,10 +27,10 @@ ppt:有四個ppt儲資料/照片
       ![image](https://github.com/user-attachments/assets/85623a3d-e489-4db7-ac74-73808ab1abfb)  
       => 因此改成兩種狀態去訓練 : 舒服 & 不舒服  
    (6)以四個模型進行訓練:邏輯迴歸、隨機森林、SVM、決策樹  
-      ![image](https://github.com/user-attachments/assets/7307b540-2ef3-4a18-8271-7a4ed79afa52)
+      ![image](https://github.com/user-attachments/assets/7307b540-2ef3-4a18-8271-7a4ed79afa52)  
       ![image](https://github.com/user-attachments/assets/a201dfb4-8275-4ff0-be92-53afb21aa233)  
       => 根據第一張圖:只要有 "gamma" 頻帶特徵，準確率都能高達1.0  
-      => 根據第二章圖:整體來說 "Cz" 電極位訓練效果優於 "Fz" ; 除了羅吉斯迴歸以外，其餘效果皆達到1.0
+      => 根據第二章圖:整體來說 "Cz" 電極位訓練效果優於 "Fz" ; 除了羅吉斯迴歸以外，其餘效果皆達到1.0  
    (7)總結: "gamma" 特徵很顯卓
 2.CzFz中  
   (1)以2個狀態、3個特徵進行訓練、train : rong 、 yxy ; test : OJH 、 xubo ; validation : kingcloser  
@@ -38,8 +38,8 @@ ppt:有四個ppt儲資料/照片
      ![image](https://github.com/user-attachments/assets/694b4db4-eb05-4e48-8160-a15c924e7754)  
      => 在訓練集準確率下，隨機森林、決策樹訓練效果皆是最好的  
      => 在驗證集準確率下，隨機森林、決策樹訓練驗證出來不相上下(不論哪階段實驗)  
-     => 所有模型在驗證集下，都有一個共通點， " Fz " 電極位訓練效果大多是最差的，不論哪階段實驗，唯獨在 SVM 第一階段實驗中高於 "Cz&Fz"電極位
-   (2)因此去看驗證集在不同階段溫感實驗中不舒服狀態下混淆矩陣預測的準確率
+     => 所有模型在驗證集下，都有一個共通點， " Fz " 電極位訓練效果大多是最差的，不論哪階段實驗，唯獨在 SVM 第一階段實驗中高於 "Cz&Fz"電極位  
+   (2)因此去看驗證集在不同階段溫感實驗中不舒服狀態下混淆矩陣預測的準確率  
       ![image](https://github.com/user-attachments/assets/4912ebc2-5e0a-4982-b98f-d6aa5205e1ca)  
       I 第一階段實驗  
         => Fz在第一階段實驗中預測的準確率最低  
